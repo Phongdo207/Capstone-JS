@@ -25,20 +25,9 @@ header .nav-link:hover::after {
   transform: scaleX(1);
 }
 
-.header-menu {
-  background-color: #a5a49c;
-}
-.header-menu .nav-link {
-  color: white;
-  font-size: 15px;
-}
-.header-menu .nav-link.active {
-  background-color: #dedcce;
-}
-
 #carousel {
   background-image: url("./../../img/product-header-bg.jpg");
-  padding: 173px;
+  padding: 190px;
   background-size: cover;
   background-position: center;
 }
@@ -55,18 +44,6 @@ header .nav-link:hover::after {
 }
 #carousel .btn {
   margin: 20px 0;
-}
-
-.tab-content {
-  text-align: center;
-}
-.tab-content h3 {
-  padding-top: 15px;
-}
-.tab-content p {
-  margin: 10px 0;
-  color: red;
-  font-weight: 500;
 }
 
 footer {
@@ -89,4 +66,34 @@ footer .info {
 
 .btnAddItem {
   background-color: #a5a49c;
+}
+
+.tab-content {
+  text-align: center;
+}
+.tab-content h3 {
+  padding-top: 15px;
+}
+.tab-content #mayAnh h1 {
+  color: rgb(0, 123, 255);
+  font-weight: 700;
+  margin: 20px 0;
+}
+.tab-content #mayAnh a:hover {
+  text-decoration: none;
+}
+.tab-content #mayAnh #desc__iTem {
+  color: red;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-brand {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar-nav {
+    font-size: 15px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

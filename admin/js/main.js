@@ -13,6 +13,8 @@ fetchCameraList();
 
 getEle("btnAddItem").addEventListener("click", function(){
     getEle("updateItem").style.display = "none";
+    getEle("addItem").style.display = "block";
+
 })
 
 getEle("addItem").onclick = function () {
