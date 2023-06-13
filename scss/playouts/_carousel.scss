@@ -1,0 +1,22 @@
+#carousel{
+    background-image: url("./../../img/product-header-bg.jpg");
+    padding: 173px;
+    background-size: cover;
+    background-position: center;
+
+    img{
+        width: 450px;
+    }
+
+    h1{
+        color: red;
+        font-weight: 600;
+    }
+    h3{
+        color: #007bff;
+        margin: 20px 0;
+    }
+    .btn{
+        margin: 20px 0;
+    }
+}

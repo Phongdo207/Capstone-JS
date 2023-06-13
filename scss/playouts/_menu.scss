@@ -1,0 +1,10 @@
+.header-menu{
+    background-color: #a5a49c;
+    .nav-link{
+        color: white;
+        font-size: 15px;
+    }
+    .nav-link.active{
+        background-color: #dedcce;
+    }
+}

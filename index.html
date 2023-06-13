@@ -1,20 +1,264 @@
-$<!doctype html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="container navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/kisspng-photography-logo-camera-clip-art-dslr-5b38df8163d577.0745020015304538894089.png" alt="">
+        CameraStore </a>
+
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./customer/view/__customView.html">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./admin/view/_viewAdmin.html">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- MENU -->
+    <!-- Nav tabs -->
+
+
+    <!-- Tab panes -->
+    <!-- <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+      </div> -->
+    </nav>
+  </header>
+
+  <!-- MENU -->
+  <div class="header-menu">
+    <div class="container">
+      <!-- Nav pills -->
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" href="./customer/view/__customView.html">Máy ảnh</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./customer/view/__customView.html">Ống kính</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./customer/view/__customView.html">Phụ kiện</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <section id="carousel">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 d-flex align-items-center ">
+          <div>
+            <h1>CANON R7</h1>
+            <h3>Camera đột phá</h3>
+            <p>Canon EOS R7 - Mẫu máy ảnh mirrorless mới là sự kết hợp hoàn hảo của hai yếu tố hiệu suất và khả năng
+              linh hoạt. Đồng thời, không quá khi nói rằng EOS R7 là đại diện tiêu biểu cho sự thay đổi, bước chuyển
+              mình của nhà Canon sang hệ thống không gương lật R cùng cảm biến APS-C. Camera sử dụng con chip cảm biến
+              CMOS 32.5MP lớn, bộ xử lý hình ảnh DIGIC X, mang lại khả năng chụp tốc độ cao lên đến 30 khung hình/giây,
+              cực kỳ thích hợp với các nhu cầu như chụp thể thao, chụp hình động vật hoang dã,.. Bên cạnh đó, Canon R7
+              còn được trang bị hệ thống lấy nét Dual Pixel CMOS AF II nổi tiếng, đảm bảo theo kịp và theo dõi chính xác
+              các chủ thể chuyển động nhanh.Về khả năng quay video, EOS R7 hỗ trợ quay 4K ở tốc độ lên đến 60p hoặc 30p
+              khi được xử lý oversampled từ vùng 7K, quay Full HD ở tốc độ lên đến 120 khung hình/giây</p>
+            <div>
+              <button class="btn btn-success">Thông tin chi tiết</button>
+              <button class="btn btn-info">Mua ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img class="img-fluid" src="./img/a8768dcdbc5740089d652904a0ded35b_EOS+R7+Front+Body.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="page-footer font-small blue pt-4 container">
+      <div class="linked text-center">Get connected width us on social networks :
+        <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+        <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+        <span><a href="#"><i class="fa-brands fa-google"></i></a></span>
+        <span><a href="#"><i class="fa-brands fa-twitter"></i></i></a></span>
+      </div>
+      <hr>
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+
+            <!-- Content -->
+            <h5 class="text-uppercase">Camera Stone</h5>
+            <p><span>Địa chỉ ĐKKD: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit blanditiis,
+              inventore
+              sint rem, voluptatem molestiae tempora ducimus in quidem dolorum quas molestias est ipsam quod, amet
+              mollitia perferendis facere tenetur.</p>
+            <p><span>Địa chỉ: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, odio.</p>
+            <p><span>Số điện thoại:</span> <a href="tel:0123456789" class="contact">0123456789</a></p>
+            <p><span>Email: </span><a href="mailto:abc@gmail.com" class="contact">abc@gmail.com</a> </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">BRANDS</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Canon</a>
+              </li>
+              <li>
+                <a href="#!">Sony</a>
+              </li>
+              <li>
+                <a href="#!">Fujifilm</a>
+              </li>
+              <li>
+                <a href="#!">Nikon</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">USEFUL LINKS</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Pricing</a>
+              </li>
+              <li>
+                <a href="#!">Settings</a>
+              </li>
+              <li>
+                <a href="#!">Orders</a>
+              </li>
+              <li>
+                <a href="#!">Help</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="./index.html" class="info">Camera Store</a>
+      </div>
+      <!-- Copyright -->
+    </div>
+
+
+
+  </footer>
+  <!-- Footer -->
+  <!-- <div class="tab-content">
+    <div id="mayAnh" class="container tab-pane active"><br>
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="ongKinh" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="amThanh" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="phuKien" class="container tab-pane fade"><br>
+      <h3>Menu 3</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div> -->
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
