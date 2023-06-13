@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./../../css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="container navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="./../../index.html"><img
+                    src="/img/kisspng-photography-logo-camera-clip-art-dslr-5b38df8163d577.0745020015304538894089.png"
+                    alt=""> CameraStore</a>
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./../../customer/view/__customView.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./_viewAdmin.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        </nav>
+    </header>
+
+    <!-- MENU -->
+    <div class="header-menu">
+        <div class="container">
+            <!-- Nav pills -->
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#mayAnh">Máy ảnh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#ongKinh">Ống kính</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#phuKien">Phụ kiện</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Button trigger modal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <button type="button" class="btn btn-success mt-3 mb-2" id="btnAddItem" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Thêm sản phẩm
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Thêm sản phẩm</h5>
+                                <button type="button" class="close" data-dismiss="modal" id="close" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="">ID</label>
+                                    <input disabled type="text" class="form-control" id="id">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Tên sản phẩm</label>
+                                    <input type="text" class="form-control" id="nameItem">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Giá tiền</label>
+                                    <input type="text" class="form-control" id="priceItem">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Loại sản phẩm</label>
+                                    <select class="custom-select d-block" id="listItem">
+                                        <option value="">Chọn loại</option>
+                                        <option value="">Máy ảnh</option>
+                                        <option value="">Ống kính</option>
+                                        <option value="">Phụ kiện</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Hình sản phẩm</label>
+                                    <input type="file" class="form-control" id="picItem">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Mô tả</label>
+                                    <textarea class="form-control" id="descItem" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="addItem">Save</button>
+                                <button type="button" class="btn btn-primary" id="updateItem">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-striped">
+            <thead class="bg-dark text-white">
+                <th>ID</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá tiền</th>
+                <th>
+                    Loại sản phẩm
+                </th>
+                <th>Hình ảnh</th>
+                <th>Mô tả</th>
+                <th></th>
+            </thead>
+            <tbody id="tbodyCamera"></tbody>
+        </table>
+    </div>
+
+
+
+
+    <footer>
+        <div class="page-footer font-small blue pt-4 container">
+            <div class="linked text-center">Get connected width us on social networks :
+                <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-google"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-twitter"></i></i></a></span>
+            </div>
+            <hr>
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Camera Stone</h5>
+                        <p><span>Địa chỉ ĐKKD: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                            blanditiis, inventore
+                            sint rem, voluptatem molestiae tempora ducimus in quidem dolorum quas molestias est ipsam
+                            quod, amet
+                            mollitia perferendis facere tenetur.</p>
+                        <p><span>Địa chỉ: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+                            odio.</p>
+                        <p><span>Số điện thoại:</span> <a href="tel:0123456789" class="contact">0123456789</a></p>
+                        <p><span>Email: </span><a href="mailto:abc@gmail.com" class="contact">abc@gmail.com</a> </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">BRANDS</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Canon</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sony</a>
+                            </li>
+                            <li>
+                                <a href="#!">Fujifilm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Nikon</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">USEFUL LINKS</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#!">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#!">Orders</a>
+                            </li>
+                            <li>
+                                <a href="#!">Help</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="./index.html" class="info">Camera Store</a>
+            </div>
+            <!-- Copyright -->
+        </div>
+
+
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../model/camera.js"></script>
+    <script src="./../controller/controller.js"></script>
+    <script src="./../services/api.js"></script>
+
+    <script src="./../js/main.js"></script>
+</body>
+
+</html>
