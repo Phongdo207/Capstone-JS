@@ -1,0 +1,23 @@
+.tab-content {
+    text-align: center;
+
+    h3 {
+        padding-top: 15px;
+    }
+    #mayAnh {
+        h1 {
+            color: rgb(0, 123, 255);
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        #desc__iTem {
+            color: red;
+            font-weight: 500;
+        }
+    }
+}

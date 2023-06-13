@@ -27,137 +27,54 @@
             <a class="navbar-brand" href="./../../index.html"><img
                     src="/img/kisspng-photography-logo-camera-clip-art-dslr-5b38df8163d577.0745020015304538894089.png"
                     alt=""> CameraStore</a>
-
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!-- Links -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="./../../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./__customView.html">Store</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./../../admin/view/_viewAdmin.html">Admin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./__customView.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../../admin/view/_viewAdmin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
         </nav>
     </header>
-
-    <!-- MENU -->
-    <div class="header-menu">
-        <div class="container">
-            <!-- Nav pills -->
-            <ul class="nav nav-pills" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="pill" href="#mayAnh">Máy ảnh</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#ongKinh">Ống kính</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#phuKien">Phụ kiện</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <!-- Item -->
     <div class="tab-content container">
         <div class="tab-pane active" id="mayAnh">
-            <H3>Máy ảnh</H3>
-            <div class="row">
-                <div class="col-6 col-md-4 my-3">
-                    <div class="card">
-                        <div class="card-header text-align-center">
-                            <img class="img-fluid"
-                                src="./../../img/a8768dcdbc5740089d652904a0ded35b_EOS+R7+Front+Body.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <a href="#">Máy ảnh Canon R7 (Nhập khẩu)<span> NEW</span></a>
-                            <p>Giá : 30000000</p>
-                        </div>
+            <h1>Sản phẩm</h1>
+            <select id="mySelect" class="custom-select">
+                <option value=>Chọn lọc</option>
+                <option value="all">Tất cả</option>
+                <option value="mayAnh">Máy ảnh</option>
+                <option value="ongKinh">Ống kính</option>
+                <option value="phuKien">Phụ kiện</option>
+            </select>
+            <div class="row" id="showMayAnh">
 
-                        <div class="card-footer">
-                            <button class="btn btn-success">Mua</button>
-                            <button class="btn btn-dark">Thêm giỏ hàng</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 my-3">
-                    <div class="card">
-                        <div class="card-header text-align-center">
-                            <img class="img-fluid"
-                                src="./../../img/eos-r10-frt_range_9feaf965e90e48d3a164d106d9939020.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <a href="#">Máy ảnh Canon R10 (Nhập khẩu)<span> NEW</span></a>
-                            <p>Giá : 30000000</p>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="btn btn-success">Mua</button>
-                            <button class="btn btn-dark">Thêm giỏ hàng</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="ongKinh">
-            <H3>Ống kính</H3>
-            <div class="row">
-                <div class="col-6 col-md-4 my-3">
-                    <div class="card">
-                        <div class="card-header text-align-center">
-                            <img class="img-fluid" src="./../../img/lovepik-telephoto-lens-png-a.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <a href="#">Ống kinh Canon RF-28mm (Nhập khẩu)<span> NEW</span></a>
-                            <p>Giá : 30000000</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-success">Mua</button>
-                            <button class="btn btn-dark">Thêm giỏ hàng</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="phuKien">
-            <H3>Phụ kiện</H3>
-            <div class="row">
-                <div class="col-6 col-md-4 my-3">
-                    <div class="card">
-                        <div class="card-header text-align-center">
-                            <img class="img-fluid" src="./../../img/90308102.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <a href="#">Đèn trợ sáng (Nhập khẩu)<span> NEW</span></a>
-                            <p>Giá : 30000000</p>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="btn btn-success">Mua</button>
-                            <button class="btn btn-dark">Thêm giỏ hàng</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -293,6 +210,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../controller/controller.js"></script>
+    <script src="./../model/camera.js"></script>
+    <script src="./../services/api.js"></script>
+
+    <script src="./../js/main.js"></script>
 </body>
 
 </html>

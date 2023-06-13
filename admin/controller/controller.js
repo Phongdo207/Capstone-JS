@@ -8,7 +8,9 @@ var renderUI = function (data) {
                 <td>${arr.id}</td>
                 <td>${arr.name}</td>
                 <td>${arr.price}</td>
-                <td>${arr.type}</td>
+                <td>${arr.type === "mayAnh" ? "Máy ảnh" :
+                         arr.type === "ongKinh" ? "Ống kính" :
+                             "Phụ kiện"}</td>
                 <td>${arr.pic}</td>
                 <td>${arr.desc}</td>
                 <td>
@@ -26,13 +28,15 @@ function getEle(id) {
     return document.getElementById(id);
 }
 
-
 var infoItem = function (id) {
     var id = getEle("id").value
     var name = getEle("nameItem").value;
     var price = getEle("priceItem").value;
     var type = getEle("listItem").value;
-    var pic = getEle("picItem").value;
+    let pic = "";
+    if (getEle("picItem") && getEle("picItem").files.length > 0) {
+        pic = getEle("picItem").files[0].name;
+    }
     var desc = getEle("descItem").value;
 
     var camera = new CameraInfo(id, name, price, type, pic, desc);
