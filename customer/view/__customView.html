@@ -38,7 +38,7 @@
                         <a class="nav-link" href="./../../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./__customView.html">Store</a>
+                        <a class="nav-link active" href="./../view/__customView.html">Store</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./../../admin/view/_viewAdmin.html">Admin</a>
@@ -46,20 +46,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng
-                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+
+                    <button class="btn btn-dark js-open" data-target="#js-favourites" aria-controls="js-favourites">Giỏ
+                        hàng</button>
+                    <div id="js-favourites" class="off-canvas-panel">
+                        <button class="js-close btn-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <div class="heading">
+                            <p class="h3">Giỏ hàng đã mua</p>
+                            <div></div>
                         </div>
-                    </li>
+                        <div class="inner" id="tbodyCart">
+                            <!-- <button id="minus" onclick="handleMinus()"> <i class="fa-solid fa-minus"></i></button>
+                            <input type="text" name="amount" id="amount" value="1">
+                            <button id="plus" onclick="handlePlus()"> <i class="fa-solid fa-plus"></i></button> -->
+                        </div><!-- ./media -->
+                        <a class="btn btn-success btn-lg js-open" data-target="#enquiry-form" href="#enquiry-form">Thanh
+                            toán</a>
+                    </div>
+
                 </ul>
             </div>
-
         </nav>
     </header>
     <!-- Item -->
@@ -174,30 +182,7 @@
             </div>
             <!-- Copyright -->
         </div>
-
-
-
     </footer>
-
-
-    <!-- Tab panes -->
-    <!-- <div class="tab-content">
-            <div id="mayAnh" class="container tab-pane active"><br>
-              <h3>HOME</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div id="ongKinh" class="container tab-pane fade"><br>
-              <h3>Menu 1</h3>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div id="menu2" class="container tab-pane fade"><br>
-              <h3>Menu 2</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-          </div>
-            </div> -->
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -213,9 +198,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
         integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../controller/menu.js"></script>
     <script src="./../controller/controller.js"></script>
     <script src="./../model/camera.js"></script>
     <script src="./../services/api.js"></script>
+    <script src="./../controller/amount.js"></script>
 
     <script src="./../js/main.js"></script>
 </body>

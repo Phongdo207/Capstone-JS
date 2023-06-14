@@ -22,3 +22,21 @@ getEle("mySelect").addEventListener("change", async () => {
         renderItem(timKiem);
     }
 })
+
+var cartItem = function(){
+    let mangGioHang = [];
+    this.themGioHang = function (sp){
+        
+    }
+}
+
+function fetchCartList() {
+    api.callApi("camera", "GET", null)
+        .then(function (result) {
+            renderCart(result.data);
+        }).catch(function (err) {
+            console.log(err);
+        })
+}
+
+fetchCartList();
