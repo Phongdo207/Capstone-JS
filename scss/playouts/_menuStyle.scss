@@ -1,0 +1,90 @@
+.off-canvas-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100vh;
+    
+    opacity: 0;
+    
+    transform: translateX(-100%);
+    transition: transform .2s ease-out, opacity .5s ease-out;
+    background-color: #fff;
+    box-shadow: 0 0 50px 20px rgba(0,0,0,0.1);
+    
+    @media (min-width: 480px) {
+      width: 300px;
+      transform: translateX(-300px);
+    }
+    
+    &.is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    .btn-lg {
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+    }
+    .heading {
+      position: relative;
+      padding: 15px 0;
+      z-index: 3;
+      background-color: #fff;
+    }
+    p.h3 {
+      margin: 0 15px;
+    }
+  }
+  
+  .btn-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
+  }
+  
+  .inner {
+    padding: 0 15px 15px;
+    height: calc(100% - 120px);
+    overflow-y: auto;
+  }
+  
+  .js-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px 15px 20px;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    
+    &.is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .btn-back {
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: blue;
+    
+  }
+  
+  body > .js-open {
+    position: fixed; 
+    top: 15px;
+    right: 15px;
+  }

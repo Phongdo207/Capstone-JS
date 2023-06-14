@@ -16,13 +16,42 @@ var renderItem = function (data) {
                         </div>
 
                         <div class="card-footer">
-                            <button class="btn btn-info">Mua hàng</button>
+                            <button class="btn btn-info" id="addCart">Mua hàng</button>
                         </div>
                     </div>
                 </div>
         `
     }
     document.getElementById("showMayAnh").innerHTML = content;
+}
+
+var renderCart = function (data) {
+    var content = "";
+    for (var i = 0; i < data.length; i++) {
+        var arr = data[i];
+        content += `
+        <hr>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="./../../img/${arr.pic}" alt="...">
+                    </a>
+            </div>
+                <div class="media-body">
+                    <h5 class="media-heading">${arr.name}</h5>
+                    <p>Giá : ${arr.price} VNĐ</p>
+                    <div class="d-flex" id="styleAmount">
+                    <span>Chọn số lượng</span>
+                    <button id="minus" onclick="handlePlus()"> <i class="fa-solid fa-minus"></i></button>
+                    <input type="text" name="amount" id="amount" value="1">
+                    <button id="plus" onclick="handleMinus()"> <i class="fa-solid fa-plus"></i></button>
+            </div>
+             </div>
+            </div><!-- ./media -->
+            <a class="btn btn-success btn-lg js-open" data-target="#enquiry-form" href="#enquiry-form">Thanh toán</a>
+        `
+    }
+    getEle("tbodyCart").innerHTML = content;
 }
 
 function getEle(id) {
